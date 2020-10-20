@@ -1,0 +1,8 @@
+import requests
+
+
+token = 'EAAnb4IJRfdEBALrZBK0D0jJqZBaZAmSnis6oPXmMnoOHhZCDWwjSoWTkd7WpdHZAYSU8jzMakKNIPb7A3NxZApXPApRECLnm2RsvZABZCuYCiKsaU5Q3GRQfmEBZAq22PKc4HZABf7XH1YNm5ENtbO28i8bmdZANsrcMrvoWYAbd4nyjJVeV0KYACZAHNk12ydkunTWa6U63FG1spVJAFzdJA6rn2I0hd1lbHNls8E9DEQBh3AZDZD'
+
+me = 'https://graph.facebook.com/v8.0/me?access_token'+token
+profile = requests.get(me)
+print(profile.text)
